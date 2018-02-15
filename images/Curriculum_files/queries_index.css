@@ -1,0 +1,41 @@
+@media screen and ( min-height:860px ){
+    .head_title {
+    	top: 34%;
+    }
+}
+
+@media screen and ( min-height:960px ){
+    .head_title {
+    	top: 36%;
+    }
+}
+
+@media screen and (max-width:767px) {
+	#logo_top {
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+	}
+
+	#logo_top:hover {
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+	}
+
+.top .head_title {
+    position: absolute;
+    font-family: Circular-Bold, 'Lato', sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    height: 80px;
+    color: #fff;
+    z-index: 101;
+    width: 100%;
+    overflow: hidden;
+    line-height: 1;
+    letter-spacing: -1px;
+    }
+
+}
+

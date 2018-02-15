@@ -1,0 +1,276 @@
+ body {
+     background: url(images/back.jpg);
+ }
+
+ #firstimg {
+     width: 101%;
+     height: auto;
+     left: 0px;
+     margin: 0px;
+     display: block;
+     margin-left: -10px;
+     margin-top: -10px;
+ }
+
+ #gif {
+     animation: bouncing 1s infinite ease-in-out;
+    bottom: 25vh;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+ }
+@keyframes bouncing{
+    0%{
+        bottom: 0px;
+
+    }
+    50%{
+        bottom: 20px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+ main section {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
+     grid-gap: .5em;
+ }
+
+ section {
+     margin-left: 100px;
+     margin-right: 100px;
+ }
+
+ .icon {
+     width: 40px;
+     height: 40px;
+ }
+
+ .boxicons {
+     display: flex;
+     margin: 10px;
+ }
+
+ article {
+     border: 1px solid black;
+     background-color: rgba(0, 0, 0, .2);
+     position: relative;
+     margin: 20px;
+ }
+
+ section h2 {
+     grid-column: 1/-1;
+     text-transform: capitalize;
+     text-align: center;
+ }
+
+ article img {
+     width: 100%;
+ }
+
+ #modal {
+     padding-top: 10vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(0, 0, 0, .5);
+ }
+
+ .container {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+ }
+
+ .container p {
+     margin: 20px;
+ }
+
+ .asideImg {
+     width: 90%;
+     height: auto;
+ }
+
+ #modal aside {
+     margin: auto;
+     width: 80vw;
+     height: 80vh;
+     background: white;
+     padding: 1em;
+ }
+
+ .price {
+     text-align: center;
+     background-color: black;
+     color: white;
+     margin: 10px;
+ }
+
+ .discountprice {
+     width: auto;
+     text-align: center;
+     background-color: white;
+     margin: 10px;
+ }
+
+ .prices {
+     display: inline-flex;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .strike {
+     text-decoration: line-through;
+ }
+
+ ul {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     padding: 0;
+     list-style-type: none;
+     text-align: center;
+     font-family: "Journey to Thailand";
+     font-size: 30px;
+     border: 1px solid black;
+     background: rgba(0, 0, 0, .3);
+     color: aliceblue;
+     height: 40px;
+ }
+
+ a:visited {
+     color: black;
+     text-decoration: none;
+ }
+
+ h1,
+ h2 {
+     font-family: "Journey to Thailand";
+     text-align: center;
+ }
+
+ p {
+     font-size: 17px;
+     margin: 10px;
+ }
+
+ #headerpicture {
+     width: 100%;
+ }
+
+ button {
+     color: white;
+     ;
+     background-color: black;
+     height: 30px;
+     opacity: 1;
+     margin: auto;
+     display: block;
+     margin-bottom: 0px;
+     font-size: 18px;
+     position: absolute;
+     bottom: .5em;
+     right: .5em;
+ }
+
+ input {
+     display: none;
+ }
+
+ label {
+     display: none;
+ }
+
+ input:checked~nav {
+     max-height: 500px;
+ }
+ /*tablet version*/
+
+ @media only screen and (max-width:60em) {
+     main section {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+         grid-gap: .5em;
+     }
+     section {
+         margin-left: 40px;
+         margin-right: 40px;
+     }
+     #gif {
+         display: none;
+     }
+ }
+ /*mobile*/
+
+ @media only screen and (max-width:30em) {
+     input {
+         display: none;
+     }
+     label {
+         position: absolute;
+         display: inline-block;
+         cursor: pointer;
+         font-size: 30px;
+         top: 5px;
+         right: 10px;
+         background-color: rgba(0, 0, 0, .4);
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 5px 5px;
+         height: 40px;
+         width: 40px;
+         text-align: center;
+     }
+     nav {
+         max-height: 0;
+         overflow: hidden;
+     }
+     input:checked~nav {
+         max-height: 500px;
+         transition: all 1s;
+     }
+     nav ul {
+         display: block;
+         text-decoration: none;
+         height: auto;
+         font-size: 20px;
+         width: auto;
+     }
+     nav a:hover {}
+     main section {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         margin: 0px;
+     }
+     #firstimg {
+         width: 100%;
+         margin: auto;
+     }
+     #gif {
+         display: none;
+     }
+     h1,
+     h2 {
+         font-size: 20px;
+     }
+     h3,
+     h4 {
+         font-size: 17px;
+     }
+     p {
+         font-size: 15px;
+     }
+     button {
+         font-size: 15px;
+     }
+     .container {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
